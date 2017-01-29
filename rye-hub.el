@@ -6,4 +6,6 @@
       (setf mac-command-modifier 'meta)
       (setf mac-option-modifier 'super)))
 
+(kotct/switch-to-theme 'solarized-light)
+
 (provide 'rye-hub)
