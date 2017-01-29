@@ -6,7 +6,6 @@
       (setf mac-command-modifier 'meta)
       (setf mac-option-modifier 'super)))
 
-
 (set-face-attribute 'default nil :font "Source Code Pro-12")
 
 (provide 'rye-hub)
