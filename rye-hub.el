@@ -6,6 +6,8 @@
       (setf mac-command-modifier 'meta)
       (setf mac-option-modifier 'super)))
 
+(set-face-attribute 'default nil :font "Source Code Pro-12")
+
 (kotct/switch-to-theme 'solarized-light)
 
 (provide 'rye-hub)
