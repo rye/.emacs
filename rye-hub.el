@@ -6,8 +6,10 @@
       (setf mac-command-modifier 'meta)
       (setf mac-option-modifier 'super)))
 
+;; Set our font to Source Code Pro, size 12
 (set-face-attribute 'default nil :font "Source Code Pro-12")
 
-(kotct/switch-to-theme 'solarized-light)
+;; Always use the solarized-dark theme
+(kotct/switch-to-theme 'solarized-dark)
 
 (provide 'rye-hub)
