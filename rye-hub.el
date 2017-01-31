@@ -1,3 +1,5 @@
+(kotct/personal-packages hl-todo)
+
 (defun rye/system--get-term-program ()
   (getenv "TERM_PROGRAM"))
 
@@ -33,6 +35,12 @@
 
 ;; Set our font to Source Code Pro, size 12
 (set-face-attribute 'default nil :font "Source Code Pro-12")
+
+;; Use two-space tabs.
+(setf global-tab-width 2)
+(setq-default tab-width global-tab-width)
+(setf smie-indent-basic global-tab-width)
+(setq-default ruby-indent-level global-tab-width)
 
 ;; Always use the solarized-dark theme
 (kotct/switch-to-theme 'solarized-dark)
