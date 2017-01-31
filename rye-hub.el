@@ -21,7 +21,7 @@
     ;; etc. to build out the PATH variable.
     ;;
     ;; Then set `exec-path' to the split version of this PATH variable.
-    (if (not (rye/system--term-program))
+    (if (not (rye/system--get-term-program))
         (let ((path (shell-command-to-string
                      "$SHELL -cl \"printf %s \\\"\\\$PATH\\\"\"")))
           (setenv "PATH" path)
