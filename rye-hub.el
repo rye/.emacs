@@ -1,4 +1,4 @@
-(kotct/personal-packages hl-todo)
+(kotct/personal-packages dockerfile-mode)
 
 (defun rye/system--get-term-program ()
   (getenv "TERM_PROGRAM"))
