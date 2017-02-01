@@ -37,10 +37,7 @@
 (set-face-attribute 'default nil :font "Source Code Pro-12")
 
 ;; Use two-space tabs.
-(setf global-tab-width 2)
-(setq-default tab-width global-tab-width)
-(setf smie-indent-basic global-tab-width)
-(setq-default ruby-indent-level global-tab-width)
+(kotct/set-tab-width 2)
 
 ;; Always use the solarized-dark theme
 (kotct/switch-to-theme 'solarized-dark)
