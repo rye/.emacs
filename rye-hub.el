@@ -1,4 +1,5 @@
 (kotct/personal-packages dockerfile-mode)
+;;; C-x C-y: interactively set font height
 
 (kotct/font-set-name "Source Code Pro")
 (kotct/font-set-height 12.0)
