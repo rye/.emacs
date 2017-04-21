@@ -14,4 +14,11 @@
 ;; Always use the solarized-dark theme
 (kotct/switch-to-theme 'solarized-dark)
 
+
+;;; scroll one line at a time (less "jumpy" than defaults)
+(setf mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setf mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setf mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setf scroll-step 1) ;; keyboard scroll one line at a time
+
 (provide 'rye-hub)
