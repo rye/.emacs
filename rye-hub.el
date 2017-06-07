@@ -5,6 +5,9 @@
 (kotct/font-set-name "Source Code Pro")
 (kotct/font-set-height 12.0)
 
+(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-name "Source Code Pro")))
+(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-height 12.0)))
+
 ;; Keybind for font height setting.
 (global-set-key (kbd "C-x C-y") #'kotct/font-set-height)
 
