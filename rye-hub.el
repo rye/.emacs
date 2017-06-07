@@ -19,6 +19,8 @@
 ;; Always use the solarized-dark theme
 (kotct/switch-to-theme 'solarized-dark)
 
+;; Don't create lockfiles
+(setf create-lockfiles nil)
 
 
 (provide 'rye-hub)
