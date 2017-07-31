@@ -1,6 +1,7 @@
 ;;; C-x C-y: interactively set font height
 
-(kotct/personal-packages dockerfile-mode gitignore-mode)
+(kotct/personal-packages dockerfile-mode
+                         gitignore-mode)
 
 ;; Use Source Code Pro font, size 12.0.
 (kotct/font-set-name "Source Code Pro")
