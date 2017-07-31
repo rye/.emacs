@@ -20,6 +20,9 @@
 ;; Don't print stuff when saving files.
 (setf save-silently t)
 
+;; Enable dev-mode.
+(setf kotct/dev-mode t)
+
 (defun rye-hub-unload-function ()
   (unload-feature 'rye-fira 'force))
 
