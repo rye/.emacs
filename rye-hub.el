@@ -3,13 +3,7 @@
 (kotct/personal-packages dockerfile-mode
                          gitignore-mode)
 
-;; Use Source Code Pro font, size 12.0.
-(kotct/font-set-name "Source Code Pro")
-(kotct/font-set-height 12.0)
-
-;; Ditto for new frames.
-(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-name "Source Code Pro")))
-(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-height 12.0)))
+(require 'rye-fira)
 
 ;; Keybind for font height setting.
 (global-set-key (kbd "C-x C-y") #'kotct/font-set-height)
@@ -25,5 +19,8 @@
 
 ;; Don't print stuff when saving files
 (setf save-silently t)
+
+(defun rye-hub-unload-function ()
+  (unload-feature 'rye-fira 'force))
 
 (provide 'rye-hub)
