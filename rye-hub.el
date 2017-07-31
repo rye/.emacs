@@ -5,19 +5,19 @@
 
 (require 'rye-fira)
 
-;; Keybind for font height setting.
+;; Keybind for font height setting
 (global-set-key (kbd "C-x C-y") #'kotct/font-set-height)
 
 ;; Use two-space tabs.
 (kotct/set-tab-width 2)
 
-;; Always use the solarized-dark theme
+;; Always use the solarized-dark theme.
 (kotct/switch-to-theme 'solarized-dark)
 
-;; Don't create lockfiles
+;; Don't create lockfiles.
 (setf create-lockfiles nil)
 
-;; Don't print stuff when saving files
+;; Don't print stuff when saving files.
 (setf save-silently t)
 
 (defun rye-hub-unload-function ()
