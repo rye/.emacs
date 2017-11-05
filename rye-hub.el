@@ -7,8 +7,10 @@
 (require 'rye-fira)
 (require 'rye-js-customizations)
 (require 'rye-org)
+(require 'rye-keys)
 
 (defun rye-hub-unload-function ()
+  (unload-feature 'rye-keys 'force)
   (unload-feature 'rye-org 'force)
   (unload-feature 'rye-js-customizations 'force)
   (unload-feature 'rye-fira 'force)
