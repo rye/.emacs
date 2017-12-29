@@ -3,6 +3,7 @@
 
 (require 'rye-dev)
 (require 'rye-appearance)
+(require 'rye-magit)
 (require 'rye-editing)
 (require 'rye-fira)
 (require 'rye-js-customizations)
@@ -15,6 +16,7 @@
   (unload-feature 'rye-js-customizations 'force)
   (unload-feature 'rye-fira 'force)
   (unload-feature 'rye-editing 'force)
+  (unload-feature 'rye-magit 'force)
   (unload-feature 'rye-appearance 'force)
   (unload-feature 'rye-dev 'force))
 
