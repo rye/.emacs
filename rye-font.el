@@ -1,9 +1,9 @@
-;; Use Source Code Pro font, size 12.0.
+;; Use Fira Code font, size 12.0.
 (kotct/font-set-name "Fira Code")
 (kotct/font-set-height 12.0)
 
 ;; Ditto for new frames.
-(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-name "Roboto Mono")))
+(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-name "Fira Code")))
 (add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-height 12.0)))
 
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
