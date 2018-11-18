@@ -1,6 +1,8 @@
 (kotct/personal-packages dockerfile-mode
                          gitignore-mode
-                         pandoc-mode)
+                         js2-mode
+                         pandoc-mode
+                         rjsx-mode)
 
 (require 'rye-dev)
 (require 'rye-appearance)
