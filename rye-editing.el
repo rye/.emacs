@@ -13,4 +13,7 @@
 (add-hook #'c-mode-common-hook
           (lambda () (auto-complete-mode -1)))
 
+(add-hook #'ruby-mode-hook
+          (lambda () (setf ruby-insert-encoding-magic-comment nil)))
+
 (provide 'rye-editing)
