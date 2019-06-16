@@ -1,10 +1,10 @@
 ;; Use Fira Code font, size 12.0.
 (kotct/font-set-name "Fira Code")
-(kotct/font-set-height 12.0)
+(kotct/font-set-height 11.0)
 
 ;; Ditto for new frames.
 (add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-name "Fira Code")))
-(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-height 12.0)))
+(add-hook 'after-make-frame-functions (lambda (frame) (kotct/font-set-height 11.0)))
 
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
                (35 . ".\\(?:###\\|##\\|_(\\|[#(?[_{]\\)")
