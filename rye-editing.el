@@ -16,4 +16,7 @@
 (add-hook #'ruby-mode-hook
           (lambda () (setf ruby-insert-encoding-magic-comment nil)))
 
+(require 'lsp-mode)
+(add-hook #'rust-mode-hook #'lsp)
+
 (provide 'rye-editing)

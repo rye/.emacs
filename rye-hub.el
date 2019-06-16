@@ -1,5 +1,8 @@
 (kotct/personal-packages dockerfile-mode
+                         flycheck
                          gitignore-mode
+                         lsp-mode
+                         lsp-ui
                          js2-mode
                          pandoc-mode
                          rjsx-mode)
