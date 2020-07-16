@@ -1,4 +1,5 @@
 ;; Use Fira Code font, size 12.0.
+(require 'text-visuals)
 (kotct/font-set-name "Source Code Pro")
 (kotct/font-set-height 11.0)
 
